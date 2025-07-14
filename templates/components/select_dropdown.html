@@ -1,0 +1,9 @@
+<div class="mb-3">
+  <label for="{{ select_id }}" class="form-label">{{ select_label }}</label>
+  <select class="form-select" id="{{ select_id }}" name="{{ select_name }}" required>
+    <option value="">-- Select --</option>
+    {% for option in select_options %}
+      <option value="{{ option }}" {% if option == gender_selected %}selected{% endif %}>{{ option }}</option>
+    {% endfor %}
+  </select>
+</div>
