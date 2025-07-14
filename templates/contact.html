@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Contact Us</h2>
+<form method="POST">
+  {% include "components/input_text.html" with context %}
+  {% include "components/input_email.html" with context %}
+  {% include "components/input_message.html" with context %}
+  <button type="submit" class="btn btn-primary">Send</button>
+</form>
+{% endblock %}

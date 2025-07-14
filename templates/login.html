@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Login</h2>
+<form method="POST">
+  {% include "components/input_email.html" with context %}
+  {% include "components/input_password.html" with context %}
+  <button type="submit" class="btn btn-primary">Login</button>
+</form>
+{% endblock %}
